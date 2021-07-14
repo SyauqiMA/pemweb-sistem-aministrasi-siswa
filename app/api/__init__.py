@@ -11,7 +11,6 @@ def create_app():
     # Create app and basic configs here (DB, etc.)
     app = Flask(__name__)
     app.config.from_pyfile('config.py')
-    app.config.from_envvar('ENV_FILE_LOCATION')
 
     # initialize extensions
     db.init_app(app)
